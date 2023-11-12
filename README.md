@@ -1,7 +1,3 @@
-了解しました。以下は `DOMNavigator` Chrome DevTools 拡張機能のREADMEファイルの例です。
-
----
-
 # DOMNavigator for Chrome DevTools
 
 ## 概要
