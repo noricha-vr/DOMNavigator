@@ -1,0 +1,9 @@
+# TypeScript Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# ディレクトリ dist を無視
+/dist
+
+# その他の一般的な無視ファイル
+node_modules
