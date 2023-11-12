@@ -1,6 +1,5 @@
-let elementInfo: any = null; // グローバル変数で要素情報を保存
 
-chrome.devtools.panels.elements.createSidebarPane("Selected Element JSON", sidebar => {
+chrome.devtools.panels.elements.createSidebarPane("DOMNavigator", sidebar => {
     function updateElementProperties() {
         const expression = `
       (function() {
