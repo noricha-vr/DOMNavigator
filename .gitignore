@@ -2,8 +2,11 @@
 **/*.js
 **/*.js.map
 
-# ディレクトリ dist を無視
-/dist
+# ディレクトリ dist を無視するが、特定のファイルとディレクトリは含める
+/dist/*
+!/dist/*.html
+!/dist/manifest.json
+!/dist/images
 
 # その他の一般的な無視ファイル
 node_modules
