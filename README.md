@@ -2,7 +2,9 @@
 
 ## 概要
 
-`DOMNavigator` は、Chrome DevTools の機能を拡張する拡張機能で、ユーザーがElementsパネルで選択したDOM要素の情報をリッチなJSON形式でサイドバーに表示します。これにより、開発者は選択した要素の詳細な構造を迅速に把握できます。
+`DOMNavigator` は、Chrome DevTools の機能を拡張する拡張機能で、ユーザーがElementsパネルで選択したDOM要素の情報を表示し、コピーできるようにします。
+
+コピーされた情報を[Xpath生成アシスタント](https://chat.openai.com/g/g-aIA7TLluS-xpathsheng-cheng-asisutanto)に貼り付けると、XPathの候補が生成されます。
 
 ![DOMNavigatorのスクリーンショット](https://i.gyazo.com/9777e3b96b4bfb97a3aa18462f3d1a4c.png)
 
@@ -14,18 +16,18 @@
 
 ## インストール方法
 
-1. このGitHubリポジトリをクローンまたはダウンロードし、ローカルシステムに保存します。
-2. Chromeブラウザで `chrome://extensions/` を開きます。
-3. 右上にある「デベロッパーモード」を有効に切り替えます。
-4. 「パッケージ化されていない拡張機能を読み込む」をクリックし、ダウンロードした `DOMNavigator` フォルダを選択します。
-5. 拡張機能がDevToolsに組み込まれ、利用可能になります。
+1. [Google Chromen に追加](https://chrome.google.com/webstore/detail/domnavigator/djffbmcigflbjkkbimdpfoloelgddcgk)します
+1. 拡張機能がDevToolsに組み込まれ、利用可能になります。
 
 ## 使い方
 
 1. 任意のウェブページを開き、DevToolsを起動します（F12キーまたはCtrl+Shift+I、MacではCmd+Option+I）。
-2. Elementsパネルにて、調べたいDOM要素をクリックで選択します。
-3. サイドバーから `DOMNavigator` を選択します。
-4. サイドバーにDOMのリストが作成されているので、リストの一番上のCopyObjectボタンをクリックすると、JSON形式の要素情報がクリップボードにコピーされます。
+1. `Elements`パネルにて、調べたいDOM要素を選択します。
+1. サイドバーから `DOMNavigator` を選択します。
+1. `DOMNavigator` にDOMのリストが作成されます。
+1. リストの一番上のオブジェクトを選択して、右クリックメニューから`CopyObject`ボタンをクリックすると、JSON形式の要素情報がクリップボードにコピーされます。
+1. [XPath生成アシスタント](https://chat.openai.com/g/g-aIA7TLluS-xpathsheng-cheng-asisutanto)に貼り付けて送信すると、XPathの候補が生成されます。
+1. 生成されたXPathを使って、Seleniumなどの自動テストツールでDOM要素を操作できます。
 
 ## 開発者向け情報
 
