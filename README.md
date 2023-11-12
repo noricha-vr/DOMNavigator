@@ -32,8 +32,7 @@
 
 ## 開発者向け情報
 
-- `src/devtools.ts`: DevToolsサイドバーパネルの作成と要素の情報を更新するためのスクリプト。
-- `panel.html` および `panel.js`: サイドバーパネルのHTMLとロジックを定義しています。
+- `src/devtools.ts`: DevToolsサイドバーパネルの作成と要素の情報を更新するためのスクリプトです
 
 ## ライセンス
 
