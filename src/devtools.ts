@@ -12,7 +12,7 @@ chrome.devtools.panels.elements.createSidebarPane("DOMNavigator", sidebar => {
           for (let i = 0; i < attrs.length; i++) {
             attributes[attrs[i].name] = attrs[i].value;
           }
-          const text = element.textContent.trim(); // 各要素のtextContentを取得
+          const text = element.textContent.trim().substring(0, 20);
           info.push({ tag, attributes, text }); // textを追加
           if (element.id || element === document.documentElement) {
             break;
