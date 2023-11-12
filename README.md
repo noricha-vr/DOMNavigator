@@ -6,10 +6,9 @@
 
 ## 概要
 
-`DOMNavigator` は、Chrome DevTools の機能を拡張する拡張機能で、ユーザーがElementsパネルで選択したDOM要素の情報をリッチなJSON形式でサイドバーに表示します。これにより、開発者は選択した要素の詳細な構造を迅速に把握し、デバッグプロセスを効率化することができます。
+`DOMNavigator` は、Chrome DevTools の機能を拡張する拡張機能で、ユーザーがElementsパネルで選択したDOM要素の情報をリッチなJSON形式でサイドバーに表示します。これにより、開発者は選択した要素の詳細な構造を迅速に把握できます。
 
-![DOMNavigatorのスクリーンショット](https://gyazo.com/9777e3b96b4bfb97a3aa18462f3d1a4c)
-
+![DOMNavigatorのスクリーンショット](https://i.gyazo.com/9777e3b96b4bfb97a3aa18462f3d1a4c.png)
 
 ## 特徴
 
